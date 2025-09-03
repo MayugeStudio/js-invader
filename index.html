@@ -14,17 +14,34 @@
       text-align: center;
     }
 
-    #invader {
-      border: 1px solid black;
+    #retry-button {
+      color: #000;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 250px;
+      margin:0 auto;
+      padding: .9em 2em;
+      border: none;
+      border-radius: 5px;
+      background-color: skyblue;
+      color: #2589d0;
+      font-size: 1em;
+      box-shadow: 0 7px steelblue;
+      cursor: pointer;
+    }
+
+    #retry-button:active {
+       position: relative;
+       top: 7px;
+       box-shadow: none;
     }
 
   </style>
   <body>
-    <main >
-      <canvas id="invader" width="384px" height="576px">
-        キャンバスです。
-      </canvas>
+    <main id="container">
     </main>
+    <button id="retry-button">リトライ</button>
     <script src="invader.js"></script>
   </body>
 </html>
